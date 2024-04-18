@@ -59,6 +59,36 @@ require_once __DIR__ . '/db.php';
                             <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Movie name: <?= $blackHawckDown->title ?></div>
+                                <div class="card-text">Lenguage: <?= $blackHawckDown->lenguage ?></div>
+                                <span>Vote: <?= $blackHawckDown->vote ?></span>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Movie name: <?= $idiocracy->title ?></div>
+                                <div class="card-text">Lenguage: <?= $idiocracy->lenguage ?></div>
+                                <span>Vote: <?= $idiocracy->vote ?></span>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Movie name: <?= $aliG->title ?></div>
+                                <div class="card-text">Lenguage: <?= $aliG->lenguage ?></div>
+                                <span>Vote: <?= $aliG->vote ?></span>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
                     </div>
                     <!-- /.col -->
                 </div>
@@ -70,7 +100,7 @@ require_once __DIR__ . '/db.php';
 
     </div>
     <!-- /.app -->
-    
+
 </body>
 
 </html>
