@@ -1,46 +1,76 @@
 <?php
+require_once __DIR__ . '/Models/Production.php';
+require_once __DIR__ . '/db.php';
 
-/**
- * Proction class
- */
-class Production
-{
-    public $title;
-    public $lenguage;
-    public $vote;
+?>
 
-    //constructor method
-    public function __construct(string $title, string $lenguage, int $vote)
-    {
-        $this->title = $title;
-        $this->lenguage = $lenguage;
-        $this->vote = $vote;
-    }
-}
+<!doctype html>
+<html lang='en'>
 
-$dune = new Production('Dune', 'EN', 7);
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Movies dispense</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-//$dune->title = 'Dune';
-//$dune->lenguage = 'EN';
-//$dune->vote = 7;
+<body>
+    <div id='app'>
 
-$fury = new Production('Fury', 'EN', 9);
+        <header class="app-header">
+            <div class="logo">
+                Movies dispense
+            </div>
+            <!-- /.logo -->
+        </header>
+        <!-- /.app-header -->
 
-//$fury->title = 'Fury';
-//$fury->lenguage = 'EN';
-//$fury->vote = 9;
+        <main class="app-main">
+            <div class="container my-4">
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Movie name: <?= $dune->title ?></div>
+                                <div class="card-text">Lenguage: <?= $dune->lenguage ?></div>
+                                <span>Vote: <?= $dune->vote ?></span>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
 
-$avatar = new Production('Avatar', 'EN', 6);
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Movie name: <?= $fury->title ?></div>
+                                <div class="card-text">Lenguage: <?= $fury->lenguage ?></div>
+                                <span>Vote: <?= $fury->vote ?></span>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
 
-//$avatar->title = 'Avatar';
-//$avatar->lenguage = 'EN';
-//$avatar->vote = 6;
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Movie name: <?= $avatar->title ?></div>
+                                <div class="card-text">Lenguage: <?= $avatar->lenguage ?></div>
+                                <span>Vote: <?= $avatar->vote ?></span>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </main>
+        <!-- /.app-main -->
 
-//var_dump($dune->title, $dune->lenguage, $dune->vote);
-//var_dump($fury->title, $fury->lenguage, $fury->vote);
-//var_dump($avatar->title, $avatar->lenguage, $avatar->vote);
+    </div>
+    <!-- /.app -->
+    
+</body>
 
-//print all the results
-echo ('Movie name: ' . $dune->title . ' | Lenguage: ' . $dune->lenguage . ' | Vote: ' . $dune->vote . '<hr>');
-echo ('Movie name: ' . $fury->title . ' | Lenguage: ' . $fury->lenguage . ' | Vote: ' . $fury->vote . '<hr>');
-echo ('Movie name: ' . $avatar->title . ' | Lenguage: ' . $avatar->lenguage . ' | Vote: ' . $avatar->vote . '<hr>');
+</html>
