@@ -30,7 +30,7 @@ require_once __DIR__ . '/db.php';
             <div class="container my-4">
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card">
+                        <div class="card m-2">
                             <div class="card-body">
                                 <div class="card-title">Movie name: <?= $dune->title ?></div>
                                 <div class="card-text">Lenguage: <?= $dune->lenguage ?></div>
@@ -40,7 +40,7 @@ require_once __DIR__ . '/db.php';
                         </div>
                         <!-- /.card -->
 
-                        <div class="card">
+                        <div class="card m-2">
                             <div class="card-body">
                                 <div class="card-title">Movie name: <?= $fury->title ?></div>
                                 <div class="card-text">Lenguage: <?= $fury->lenguage ?></div>
@@ -50,7 +50,7 @@ require_once __DIR__ . '/db.php';
                         </div>
                         <!-- /.card -->
 
-                        <div class="card">
+                        <div class="card m-2">
                             <div class="card-body">
                                 <div class="card-title">Movie name: <?= $avatar->title ?></div>
                                 <div class="card-text">Lenguage: <?= $avatar->lenguage ?></div>
@@ -60,7 +60,7 @@ require_once __DIR__ . '/db.php';
                         </div>
                         <!-- /.card -->
 
-                        <div class="card">
+                        <div class="card m-2">
                             <div class="card-body">
                                 <div class="card-title">Movie name: <?= $blackHawckDown->title ?></div>
                                 <div class="card-text">Lenguage: <?= $blackHawckDown->lenguage ?></div>
@@ -70,7 +70,7 @@ require_once __DIR__ . '/db.php';
                         </div>
                         <!-- /.card -->
 
-                        <div class="card">
+                        <div class="card m-2">
                             <div class="card-body">
                                 <div class="card-title">Movie name: <?= $idiocracy->title ?></div>
                                 <div class="card-text">Lenguage: <?= $idiocracy->lenguage ?></div>
@@ -80,7 +80,7 @@ require_once __DIR__ . '/db.php';
                         </div>
                         <!-- /.card -->
 
-                        <div class="card">
+                        <div class="card m-2">
                             <div class="card-body">
                                 <div class="card-title">Movie name: <?= $aliG->title ?></div>
                                 <div class="card-text">Lenguage: <?= $aliG->lenguage ?></div>
