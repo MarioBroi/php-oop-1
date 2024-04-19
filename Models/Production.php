@@ -17,16 +17,31 @@ class Production
         $this->vote = $vote;
     }
 
+    //getters
     public function getTitle()
     {
-        return $this->title;
+        return  $this->title;
     }
     public function getLenguage()
     {
-        return $this->lenguage;
+        return  $this->lenguage;
     }
     public function getVote()
     {
-        return $this->vote;
+        return  $this->vote;
+    }
+
+    //setters
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    }
+    public function setLenguage($lenguage)
+    {
+        $this->lenguage = $lenguage;
+    }
+    public function setVote($vote)
+    {
+        $this->vote = $vote;
     }
 }
