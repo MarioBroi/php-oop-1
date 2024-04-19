@@ -1,7 +1,10 @@
 <?php
 
 /**
- * Proction class
+ * Production Class
+ * @author Mario Broi
+ * @copyright 2024 Mario Broi
+ * @license OFM
  */
 class Production
 {
