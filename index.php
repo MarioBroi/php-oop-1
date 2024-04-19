@@ -1,5 +1,4 @@
 <?php
-require_once __DIR__ . '/Models/Production.php';
 require_once __DIR__ . '/db.php';
 
 ?>
@@ -38,6 +37,7 @@ require_once __DIR__ . '/db.php';
                                     <h5 class="card-title text-center"><?= $production->getTitle() ?></h5>
                                     <p class="card-text"><strong>Language: </strong><?= $production->getLenguage() ?></p>
                                     <p class="card-text"><strong>Rating: </strong><?= $production->getVote() ?>/10</p>
+                                    <p class="card-footer"><strong>Genere: </strong><?= $production->genre?->name; ?></p>
                                 </div>
                                 <!-- /.card-body -->
                             </div>

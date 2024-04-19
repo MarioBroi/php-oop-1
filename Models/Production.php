@@ -11,13 +11,15 @@ class Production
     public $title;
     public $lenguage;
     public $vote;
+    public $genre;
 
     //constructor method
-    public function __construct(string $title, string $lenguage, int $vote)
+    public function __construct(string $title, string $lenguage, int $vote, Genre $genre)
     {
         $this->title = $title;
         $this->lenguage = $lenguage;
         $this->vote = $vote;
+        $this->genre = $genre;
     }
 
     //getters
