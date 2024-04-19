@@ -29,68 +29,24 @@ require_once __DIR__ . '/db.php';
         <main class="app-main">
             <div class="container my-4">
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card m-2">
-                            <div class="card-body">
-                                <div class="card-title">Movie name: <?= $dune->title ?></div>
-                                <div class="card-text">Lenguage: <?= $dune->lenguage ?></div>
-                                <span>Vote: <?= $dune->vote ?></span>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
 
-                        <div class="card m-2">
-                            <div class="card-body">
-                                <div class="card-title">Movie name: <?= $fury->title ?></div>
-                                <div class="card-text">Lenguage: <?= $fury->lenguage ?></div>
-                                <span>Vote: <?= $fury->vote ?></span>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
+                    <?php foreach ($productions as $production) : ?>
 
-                        <div class="card m-2">
-                            <div class="card-body">
-                                <div class="card-title">Movie name: <?= $avatar->title ?></div>
-                                <div class="card-text">Lenguage: <?= $avatar->lenguage ?></div>
-                                <span>Vote: <?= $avatar->vote ?></span>
+                        <div class="col">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center"><?php echo $production->title ?></h5>
+                                    <p class="card-text"><strong>Rating: </strong><?php echo $production->vote ?>/10</p>
+                                    <p class="card-text"><strong>Language: </strong><?php echo $production->lenguage ?></p>
+                                </div>
+                                <!-- /.card-body -->
                             </div>
-                            <!-- /.card-body -->
+                            <!-- /.card -->
                         </div>
-                        <!-- /.card -->
+                        <!-- /.col -->
 
-                        <div class="card m-2">
-                            <div class="card-body">
-                                <div class="card-title">Movie name: <?= $blackHawckDown->title ?></div>
-                                <div class="card-text">Lenguage: <?= $blackHawckDown->lenguage ?></div>
-                                <span>Vote: <?= $blackHawckDown->vote ?></span>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
+                    <?php endforeach ?>
 
-                        <div class="card m-2">
-                            <div class="card-body">
-                                <div class="card-title">Movie name: <?= $idiocracy->title ?></div>
-                                <div class="card-text">Lenguage: <?= $idiocracy->lenguage ?></div>
-                                <span>Vote: <?= $idiocracy->vote ?></span>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-
-                        <div class="card m-2">
-                            <div class="card-body">
-                                <div class="card-title">Movie name: <?= $aliG->title ?></div>
-                                <div class="card-text">Lenguage: <?= $aliG->lenguage ?></div>
-                                <span>Vote: <?= $aliG->vote ?></span>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.col -->
                 </div>
                 <!-- /.row -->
             </div>

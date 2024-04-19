@@ -16,4 +16,17 @@ class Production
         $this->lenguage = $lenguage;
         $this->vote = $vote;
     }
+
+    public function getTitle()
+    {
+        return $this->title;
+    }
+    public function getLenguage()
+    {
+        return $this->lenguage;
+    }
+    public function getVote()
+    {
+        return $this->vote;
+    }
 }
