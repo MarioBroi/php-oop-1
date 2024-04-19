@@ -35,9 +35,9 @@ require_once __DIR__ . '/db.php';
                         <div class="col">
                             <div class="card m-2">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center"><?php echo $production->title ?></h5>
-                                    <p class="card-text"><strong>Rating: </strong><?php echo $production->vote ?>/10</p>
-                                    <p class="card-text"><strong>Language: </strong><?php echo $production->lenguage ?></p>
+                                    <h5 class="card-title text-center"><?= $production->getTitle() ?></h5>
+                                    <p class="card-text"><strong>Language: </strong><?= $production->getLenguage() ?></p>
+                                    <p class="card-text"><strong>Rating: </strong><?= $production->getVote() ?>/10</p>
                                 </div>
                                 <!-- /.card-body -->
                             </div>
