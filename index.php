@@ -35,12 +35,9 @@ require_once __DIR__ . '/db.php';
                             <div class="card m-2">
                                 <div class="card-body">
                                     <h5 class="card-title text-center"><?= $production->getTitle() ?></h5>
-                                    <p class="card-text"><strong>Duration: </strong><?= $production->movie?->time ?></p>
                                     <p class="card-text"><strong>Language: </strong><?= $production->getLenguage() ?></p>
                                     <p class="card-text"><strong>Rating: </strong><?= $production->getVote() ?>/10</p>
                                     <p class="card-footer"><strong>Genere: </strong><?= $production->genre?->name; ?></p>
-                                    <p class="card-footer"><strong>Profit: </strong><?= $production->movie?->profit ?></p>
-
                                 </div>
                                 <!-- /.card-body -->
                             </div>
