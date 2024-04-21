@@ -17,16 +17,16 @@ require __DIR__ . '../Models/TVserie.php';
 
 $movies =
     [
-        new Movie('Dune', 'EN', 7, new Genre('action', 'an action production'), '$433,758,183.00', '2h 35m'),
-        new Movie('Fury', 'EN', 9, new Genre('action', 'an action production'), '$211,817,906.00', '2h 15m'),
-        new Movie('Avatar', 'EN', 6, new Genre('fantasy', 'an fantasy production'), '$2,923,706,026.00', '2h 42m'),
-        new Movie('Black Hawck Down', 'EN', 10, new Genre('action', 'an action production'), '$172,989,651.00', '2h 25m')
+        new Movie('Dune', 'EN', 7, new Genre('science', 'adventure', 'an science and adventure production'), '$433,758,183.00', '2h 35m'),
+        new Movie('Fury', 'EN', 9, new Genre('war', 'drama', 'an war and drama production'), '$211,817,906.00', '2h 15m'),
+        new Movie('Avatar', 'EN', 6, new Genre('action', 'adventure', 'an action and adventure  production'), '$2,923,706,026.00', '2h 42m'),
+        new Movie('Black Hawck Down', 'EN', 10, new Genre('action', 'war', 'an action and war production'), '$172,989,651.00', '2h 25m')
     ];
 
 $tvShows =
     [
-        new TVserie('Breaking Bad', 'EN', 7, new Genre('action', 'an action production'), 5),
-        new TVserie('Altered Carbon', 'EN', 9, new Genre('fantasy', 'an fantasy production'), 2),
-        new TVserie('Sense8', 'EN', 6, new Genre('Fantasy', 'an Fantasy production'), 2),
-        new TVserie('Formula 1, Drive to Survive', 'EN', 8, new Genre('documentary', 'an documentary production'), 6)
+        new TVserie('Breaking Bad', 'EN', 7, new Genre('drama', 'crime', 'an drama and crime production'), 5),
+        new TVserie('Altered Carbon', 'EN', 9, new Genre('sci-fi', 'fantasy', 'an sci-fi and fantasy production'), 2),
+        new TVserie('Sense8', 'EN', 6, new Genre('sci-fi', 'fantasy', 'an sci-fi and fantasy production'), 2),
+        new TVserie('Formula 1, Drive to Survive', 'EN', 8, new Genre('documentary', 'sport', 'an documentary production'), 6)
     ];

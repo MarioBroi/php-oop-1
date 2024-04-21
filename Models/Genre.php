@@ -8,12 +8,14 @@
  */
 class Genre
 {
-    public $name;
+    public $first;
+    public $second;
     public $description;
 
-    public function __construct(string $name, string $description)
+    public function __construct(string $first, string $second, string $description)
     {
-        $this->name = $name;
+        $this->first = $first;
+        $this->second = $second;
         $this->description = $description;
     }
 }

@@ -36,5 +36,5 @@ Facciamo in modo che Movie e TVSerie ereditino le proprietà di base dalla class
 
 Creiamo delle istanze di Movie e TVSerie e stampiamo le informazioni a schermo.
 
-## BONUS
+## BONUS ✔
 Facciamo in modo che la classe Production accetti più di un genere.

@@ -35,7 +35,7 @@ require_once __DIR__ . '/db.php';
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title text-center"><?= $tvShow->getTitle() ?> (tv)</h5>
-                                    <p class="card-text"><strong>Genere: </strong><?= $tvShow->genre?->name; ?></p>
+                                    <p class="card-text"><strong>Genere: </strong><?= $tvShow->genre?->first; ?> / <?= $tvShow->genre?->second; ?></p>
 
                                     <p class="card-text"><strong>Language: </strong><?= $tvShow->getLenguage() ?></p>
                                     <p class="card-text"><strong>Rating: </strong><?= $tvShow->getVote() ?>/10</p>
@@ -58,7 +58,7 @@ require_once __DIR__ . '/db.php';
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title text-center"><?= $movie->getTitle() ?> (movie)</h5>
-                                    <p class="card-text"><strong>Genere: </strong><?= $movie->genre?->name; ?></p>
+                                    <p class="card-text"><strong>Genere: </strong><?= $movie->genre?->first; ?> / <?= $movie->genre?->second; ?></p>
                                     <p class="card-text"><strong>Durate: </strong><?= $movie->getTime() ?></p>
                                     <p class="card-text"><strong>Language: </strong><?= $movie->getLenguage() ?></p>
                                     <p class="card-text"><strong>Rating: </strong><?= $movie->getVote() ?>/10</p>
