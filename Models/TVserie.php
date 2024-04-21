@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/Production.php';
+/* require __DIR__ . '/Production.php'; */
 
 /**
  * Genre Class
@@ -11,9 +11,19 @@ class TVserie extends Production
 {
     public $seasons;
 
-    public function __construct(string $title, string $lenguage, int $vote, Genre $genre, string $seasons)
+    public function __construct(string $title, string $lenguage, int $vote, Genre $genre, int $seasons)
     {
         parent::__construct($title,  $lenguage,  $vote, $genre);
+        $this->seasons = $seasons;
+    }
+
+    public function getSeasons()
+    {
+        return  $this->seasons;
+    }
+
+    public function setSeasons($seasons)
+    {
         $this->seasons = $seasons;
     }
 }

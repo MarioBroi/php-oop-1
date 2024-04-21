@@ -29,15 +29,36 @@ require_once __DIR__ . '/db.php';
             <div class="container my-4">
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-md-3 g-4">
 
-                    <?php foreach ($productions as $production) : ?>
+                    <?php foreach ($tvShows as $tvShow) : ?>
 
                         <div class="col">
                             <div class="card m-2">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center"><?= $production->getTitle() ?></h5>
-                                    <p class="card-text"><strong>Language: </strong><?= $production->getLenguage() ?></p>
-                                    <p class="card-text"><strong>Rating: </strong><?= $production->getVote() ?>/10</p>
-                                    <p class="card-footer"><strong>Genere: </strong><?= $production->genre?->name; ?></p>
+                                    <h5 class="card-title text-center"><?= $tvShow->getTitle() ?> (tv)</h5>
+                                    <p class="card-text"><strong>Seasons: </strong><?= $tvShow->getSeasons() ?></p>
+                                    <p class="card-text"><strong>Language: </strong><?= $tvShow->getLenguage() ?></p>
+                                    <p class="card-text"><strong>Rating: </strong><?= $tvShow->getVote() ?>/10</p>
+                                    <p class="card-footer"><strong>Genere: </strong><?= $tvShow->genre?->name; ?></p>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+
+                    <?php endforeach ?>
+
+                    <?php foreach ($movies as $movie) : ?>
+
+                        <div class="col">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center"><?= $movie->getTitle() ?> (movie)</h5>
+                                    <p class="card-text"><strong>Language: </strong><?= $movie->getLenguage() ?></p>
+                                    <p class="card-text"><strong>Rating: </strong><?= $movie->getVote() ?>/10</p>
+                                    <p class="card-text"><strong>Durate: </strong><?= $movie->getTime() ?></p>
+                                    <p class="card-text"><strong>Profit: </strong><?= $movie->getProfit() ?></p>
+                                    <p class="card-footer"><strong>Genere: </strong><?= $movie->genre?->name; ?></p>
                                 </div>
                                 <!-- /.card-body -->
                             </div>

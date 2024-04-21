@@ -20,14 +20,14 @@ Possiamo ad esempio organizzare il codice:
 Create una classe Genre (gli attributi potrebbero essere nome e descrizione) e fate in modo che la classe Production accetti un genere nel costruttore. 
 Aggiornate le informazioni stampate a schermo con il genere.
 
-# Instructions DAY 2 []
+# Instructions DAY 2 [x]
 Aggiungete al lavoro di ieri le classi Movie e TVSerie
 
 [x] La classe Movie gestisce due proprietà: 
 - profitti 
 - durata
 
-La classe TVSerie gestisce il numero di stagioni.
+[x] La classe TVSerie gestisce il numero di stagioni.
 
 ## P.S. 
 Se vuoi aggiungere altre proprietà alle due classi, fai pure! Queste sono solo una base.
